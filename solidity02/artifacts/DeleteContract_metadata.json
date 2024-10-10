@@ -12,43 +12,19 @@
 			},
 			{
 				"inputs": [],
-				"name": "factory",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_token0",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_token1",
-						"type": "address"
-					}
-				],
-				"name": "initialize",
+				"name": "deleteContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "token0",
+				"name": "getBalance",
 				"outputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -56,16 +32,20 @@
 			},
 			{
 				"inputs": [],
-				"name": "token1",
+				"name": "value",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -81,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity02/9.Create2.sol": "Pair"
+			"solidity02/10-1.DeleteContract.sol": "DeleteContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -95,12 +75,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"solidity02/9.Create2.sol": {
-			"keccak256": "0x3f54e366d88d8cc0d1e6e2e6317f1b8169aabf2a35636646b583d675323936bf",
+		"solidity02/10-1.DeleteContract.sol": {
+			"keccak256": "0xdc35906e46484a064d144e469a05426fd3d9196628a84eaafb8cb655df13fd03",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ad14515ab4d8317230356878573362d07a8f5ae79fcbb969a5d47b4132697aae",
-				"dweb:/ipfs/QmV2UB3F8p8CXHKcq7bx29LAdMqxUTCqNTnNjHwRBQXo3Q"
+				"bzz-raw://c6dbb06344423e8c7c99aa5063d4004ddb4c122085b35d9e1addfd012667573b",
+				"dweb:/ipfs/QmaKrZaajTMFpdm4CVKF9SGr4NQLzcTB5BZM2DQjtGpjLq"
 			]
 		}
 	},

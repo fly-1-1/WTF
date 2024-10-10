@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "demo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "addr",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "value",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DeployContract.DemoResult",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity02/10-2.DeployContract.sol": "DeployContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity02/10-1.DeleteContract.sol": {
+			"keccak256": "0xdc35906e46484a064d144e469a05426fd3d9196628a84eaafb8cb655df13fd03",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c6dbb06344423e8c7c99aa5063d4004ddb4c122085b35d9e1addfd012667573b",
+				"dweb:/ipfs/QmaKrZaajTMFpdm4CVKF9SGr4NQLzcTB5BZM2DQjtGpjLq"
+			]
+		},
+		"solidity02/10-2.DeployContract.sol": {
+			"keccak256": "0x22ae49d0fdafe1d2dca6c6e7f6224ea7cb858998cd9002bd52a159a30714a7dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://77bfdb40216817d1fc692ec9a7418c6d5adf961a55cad5ad0e1fb2b89ff4c866",
+				"dweb:/ipfs/QmWa1C4qwLR1L7RkRzQdtemwhmZQw589PKKnJF71EGeWBW"
+			]
+		}
+	},
+	"version": 1
+}
