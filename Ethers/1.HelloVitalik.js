@@ -13,7 +13,7 @@ import { ethers } from "ethers";
 
 // 利用公共rpc节点连接以太坊网络
 // 可以在 https://chainlist.org 上找到
-const ALCHEMY_MAINNET_URL = 'https://eth.llamarpc.com';
+const ALCHEMY_MAINNET_URL = 'https://ethereum-rpc.publicnode.com';
 const ALCHEMY_SEPOLIA_URL = 'https://rpc.polygon-blackberry.gelato.digital';
 // 连接以太坊主网
 const providerETH = new ethers.JsonRpcProvider(ALCHEMY_MAINNET_URL)
@@ -31,3 +31,5 @@ const main = async () => {
         // 输出Sepolia测试网ETH余额
         console.log(`Sepolia ETH Balance of vitalik: ${ethers.formatEther(balanceSepolia)} ETH`);
 }
+
+main()
