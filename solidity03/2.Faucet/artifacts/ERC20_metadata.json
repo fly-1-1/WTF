@@ -306,7 +306,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity03/1.ERC20/ERC20.sol": "ERC20"
+			"solidity03/2.Faucet/Faucet.sol": "ERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -320,15 +320,15 @@
 		"remappings": []
 	},
 	"sources": {
-		"solidity03/1.ERC20/ERC20.sol": {
-			"keccak256": "0x9c7ad0cff4e355afcee9c48e9afc23ab9d5babf1c3c9bab5448f5bd6f184ee3e",
+		"solidity03/2.Faucet/Faucet.sol": {
+			"keccak256": "0x800627e2d89577d675eea7b233f1824605f925c0d7f021be6e8e6540efc767aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://009c5ccf531f6a5154cb19f03d12e5070c7a2452a07ecb6c7ec0324339d1d69f",
-				"dweb:/ipfs/QmRRsXquiSQY2AE7McbLC6ZUYn2vdGDhABtYbaysbA9jb9"
+				"bzz-raw://1a5d9226844668e60b59084afa137db60bd8d710b9a039b0a5ef1f8ae4c76f49",
+				"dweb:/ipfs/QmcXukd2DpeUkPhucitbbhtksv1SYDT4UUZLmkxsQoP6uv"
 			]
 		},
-		"solidity03/1.ERC20/IERC20.sol": {
+		"solidity03/2.Faucet/IERC20.sol": {
 			"keccak256": "0x7fb2b0291b9aa91dad67b1e2df28db896882d0b137277600f1a2bb989bcc9698",
 			"license": "MIT",
 			"urls": [
