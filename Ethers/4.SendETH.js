@@ -4,7 +4,9 @@ import { ethers } from "ethers";
 
 // 利用Alchemy的rpc节点连接以太坊测试网络
 // 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md 
-const ALCHEMY_GOERLI_URL = 'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l';
+//const ALCHEMY_GOERLI_URL = 'https://holesky.infura.io/v3/0d468ae3788d4b78a511016a855a4cf7';
+const ALCHEMY_GOERLI_URL = 'HTTP://127.0.0.1:7545';
+
 const provider = new ethers.JsonRpcProvider(ALCHEMY_GOERLI_URL);
 
 // 创建随机的wallet对象
@@ -13,7 +15,8 @@ const wallet1WithProvider = wallet1.connect(provider)
 const mnemonic = wallet1.mnemonic // 获取助记词
 
 // 利用私钥和provider创建wallet对象
-const privateKey = '0x227dbb8586117d55284e26620bc76534dfbd2394be34cf4a09cb775d593b6f2b'
+//0xb511253a6fcefff56c5ec06efb1ac9ffb7e25e4e32e7036a8a482e6be1c57162
+const privateKey = '0xb511253a6fcefff56c5ec06efb1ac9ffb7e25e4e32e7036a8a482e6be1c57162'
 const wallet2 = new ethers.Wallet(privateKey, provider)
 
 // 从助记词创建wallet对象
@@ -60,7 +63,7 @@ const main = async () => {
     // ii. 构造交易请求，参数：to为接收地址，value为ETH数额
     const tx = {
         to: address1,
-        value: ethers.parseEther("0.001")
+        value: ethers.parseEther("1")
     }
     // iii. 发送交易，获得收据
     console.log(`\nii. 等待交易在区块链确认（需要几分钟）`)
